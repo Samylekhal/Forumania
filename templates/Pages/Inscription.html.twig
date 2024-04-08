@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+    
+{% block body %}
+FORUMANIA
+{{ form(form) }}
+
+{% for message in app.flashes('error') %}
+    <div class="alert alert-danger">
+        {{ message }}
+    </div>
+{% endfor %}
+<br>
+<div>Vous avez déja un compte ? <a href="{{ path('Connexion') }}">Connectez-vous</a></div> 
+{% endblock %}

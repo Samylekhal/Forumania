@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+    
+{% block body %}
+Bienvenue sur FORUMANIA {{pseudo}}
+<br>
+<a href="{{ path('Connexion') }}">Inscription</a>
+<br>
+<a href="{{ path('Profil') }}">Votre compte</a>
+{% endblock %}
